@@ -3,7 +3,7 @@
 }
 body{
     margin: 0;
-    background: url(../Imagenes_Moda/ImagInicio.jpg);
+    background: url(./Imagenes_Moda/ImagInicio.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -42,7 +42,7 @@ img{
 @media (max-width: 600px){
     body{
         margin: 0;
-        background: url(../Imagenes_Moda/ImagenCel.jpg);
+        background: url(./Imagenes_Moda/ImagenCel.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -84,7 +84,7 @@ img{
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
     body{
         margin: 0;
-        background: url(../Imagenes_Moda/ImagenCel.jpg);
+        background: url(./Imagenes_Moda/ImagenCel.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;

@@ -41,51 +41,61 @@
         <h1 id="title">Comentario</h1>
         <br>
         <br>
-      <div class="input-group">
-        <span class="input-group-text">Nombre y Apellido</span>
-        <input type="text" aria-label="First name" class="form-control">
-        <input type="text" aria-label="Last name" class="form-control">
-      </div>
-      <br>
-      <p class="p">Sexo:</p>
-      <div class="form-check-group">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
-        <label class="form-check-label" for="radioDefault2">Hombre</label>
-      </div>
-      <div class="form-check-group">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-        <label class="form-check-label" for="radioDefault1">Mujer</label>
-      </div>
-      <br>
-      <div class="input-group mb-3">
-       <label class="input-group-text" for="inputGroupSelect01">Calificacion</label>
-       <select class="form-select" id="inputGroupSelect01">
-       <option selected>-selecciona-</option>
-          <option value="1">⭐</option>
-          <option value="2">⭐⭐</option>
-          <option value="3">⭐⭐⭐</option>
-          <option value="4">⭐⭐⭐⭐</option>
-          <option value="5">⭐⭐⭐⭐⭐</option>
-       </select>
-      </div>
-      <br>
-      <div class="form-floating">
-        <p>Comentario</p>
-       <textarea class="form-control" placeholder="Escribe tu comentario..." id="floatingTextarea2" style="height: 150px; width: 250px;"></textarea>
-      </div>
+        <form class="fvalida" action="#" method="get">
+        <table>
+        <tr>
+            <td>Nombre: </td>
+            <td><input type="text" name="nombre" size="30" maxlength="100" id="nombre"></td>
+        </tr>
+        <tr>
+            <td>Sexo: <br></td>
+            <td>
+                Mujer <input type="checkbox" name="puesto" id="check1">
+                Hombre <input type="checkbox" name="puesto" id="check2">
+            </td>
+        </tr>
+        <tr>
+            <td>Edad: </td>
+            <td><input type="text" name="edad" size="3" maxlength="2" id="edad"></td>
+        </tr>
+        <tr>
+            <td>Correo: </td>
+            <td><input type="text" name="correo" size="30" maxlength="100" id="correo"></td>
+        </tr>
+        <tr>
+            <td>Telefono: </td>
+            <td><input type="text" name="telefono" size="15" maxlength="20" id="telefono"></td>
+        </tr>
+        <tr>
+            <td>Calificacion:</td>
+            <td>
+            <select name=calificacion class="calificacion">
+            <option value="Elegir">Elegir
+            <option value="1">⭐
+            <option value="2">⭐⭐
+            <option value="3">⭐⭐⭐
+            <option value="4">⭐⭐⭐⭐
+            <option value="5">⭐⭐⭐⭐⭐
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Comentario: </td>
+            <td><input type="text" name="comentario" size="20" maxlength="200" id="comentario" style="height: 150px; width: 250px" placeholder="Escribe tu comentario..."></td>
+        </tr>
 
-      <br>
-      <div class="form-check-group">
-       <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
-       <label class="form-check-label" for="checkIndeterminate">
-       Guarda mi nombre para la próxima vez que comente.
-       </label>
+        <tr>
+            <td colspan="2" align="center"><input id="enviar" type="button" value="Enviar"></td>
+        </tr>
+
+    </table>
+    </form>
+
+    <div class="resultados"></div>
+    <script src="Comentarios.js"></script>
+
       </div>
-      <br>
-      <input type="submit" type="button" class="btn btn-outline-success">
-      <input type="reset" type="button" class="btn btn-outline-danger">
-    </div>
-      </div>
+      <br><br>
     <form action="./Comentarios.html">
         <button class="floating-button"><img src="../Imagenes_Moda/chat-bot.png" alt="atencion-al-cliente"></button>
     </form>

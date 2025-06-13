@@ -76,26 +76,26 @@ function valida_envia()
     //usa el método test de expresión regular
     if(!er_tlfono.test(t))
     {
-        resultados.innerHTML="Campo telefono no válido.";
+        resultados.innerHTML=" Campo telefono no válido.";
         return 0; //no submit
     }
 
     //valido el interés
     if (calificacion.selectedIndex==0){
-    resultados.innerHTML="Debe seleccionar una calificaion";
+    resultados.innerHTML=" Debe seleccionar una calificaion";
     calificacion.focus()
     return 0;
     }
 
     if (comentario.value.length==0)
     {
-    resultados.innerHTML="Debes escribir un comentario";
+    resultados.innerHTML=" Debes escribir un comentario";
     comentario.focus(); //ubica el cursor en la caja comentario
     return 0; //no avanza a commit
     }
 
     resultados.style.backgroundColor = 'green';
-    resultados.innerHTML="Muchas gracias por enviar el formulario";
+    resultados.innerHTML=" Muchas gracias por enviar tu comentario!!!";
     //el  formulario se envia usando el metodo sumbit()
     function greetings() {fvalida.submit();}
     //Agregamos un tiempo de espera para simular que se va la informacion

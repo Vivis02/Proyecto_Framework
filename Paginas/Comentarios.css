@@ -111,6 +111,8 @@
 .resultados {
     background-color: red;
     color: aliceblue;
+    border-radius: 6px;
+    
 }
 .boton_enviar{
     background-color:  rgb(65, 2, 2);

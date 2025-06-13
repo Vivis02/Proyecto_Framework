@@ -112,6 +112,12 @@
     background-color: red;
     color: aliceblue;
 }
+.boton_enviar{
+    background-color:  rgb(65, 2, 2);
+    border-radius: 20px;
+    width: 80px;
+    color: white;
+}
 @media only screen and (max-width: 600px){
     .img1{
     max-width: 30%;

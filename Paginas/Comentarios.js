@@ -93,7 +93,7 @@ function valida_envia()
     comentario.focus(); //ubica el cursor en la caja comentario
     return 0; //no avanza a commit
     }
-
+    alert("Gracias por tu comentario!!!");
     resultados.style.backgroundColor = 'green';
     resultados.innerHTML=" Muchas gracias por enviar tu comentario!!!";
     //el  formulario se envia usando el metodo sumbit()
